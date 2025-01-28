@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 from app.beckend.db import Base
+from app.beckend.base import Base
 
 
 # Создаем модель Task

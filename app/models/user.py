@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from app.beckend.db import Base
+from app.beckend.base import Base
 
 
 # Создаем модель User
