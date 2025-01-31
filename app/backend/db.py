@@ -1,7 +1,7 @@
 # from sqlalchemy import create_engine
 # from sqlalchemy.orm import sessionmaker, DeclarativeBase
 # from sqlalchemy.ext.declarative import declarative_base
-# from app.beckend.base import Base
+# from app.backend.base import Base
 # from sqlalchemy.schema import CreateTable
 # from app.models.user import User
 # from app.models.task import Task
@@ -16,7 +16,7 @@
 # # Base = declarative_base()
 #
 # from sqlalchemy.schema import CreateTable
-# from app.beckend.db import engine
+# from app.backend.db import engine
 #
 # # Создаем таблицу для пользователей
 # print(CreateTable(User.__table__).compile(engine))
@@ -26,7 +26,7 @@
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.beckend.base import Base
+from app.backend.base import Base
 
 engine = create_engine('sqlite:///taskmanager.db', echo=True)
 SessionLocal = sessionmaker(bind=engine)
